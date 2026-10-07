@@ -74,30 +74,21 @@ export default function AuthLayout() {
             <Outlet />
 
             {/* SIGN UP / LOGIN */}
-            {isSignup ? (
-              <p className="text-center text-sm">
-                Already have an account?{' '}
+            <p className="text-center text-sm">
+              By continuing, you agree to our {' '}
 
-                <Link
-                  to="/"
-                  className="font-semibold text-[var(--color-primary)] hover:underline"
-                >
-                  Login
-                </Link>
-              </p>
-            ) : (
-              <p className="text-center text-sm">
-                Don't have an account?{' '}
+              <Link to="/privacy-policy" className="font-semibold text-[var(--color-primary)] hover:underline tracking-tight">
+                Privacy Policy
+              </Link>
 
-                <Link
-                  to="/signup"
-                  className="font-semibold text-[var(--color-primary)] hover:underline"
-                >
-                  Sign Up
-                </Link>
-              </p>
-            )}
+              {' '} and {' '}
 
+              <Link to="/terms-of-service" className="font-semibold text-[var(--color-primary)] hover:underline tracking-tight">
+                Terms of Service
+              </Link>
+
+              .
+            </p>
           </div>
         </div>
 

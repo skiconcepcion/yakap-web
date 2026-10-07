@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router'
 import { Eye, EyeOff } from 'lucide-react'
 
 export default function Login() {
@@ -13,8 +14,12 @@ export default function Login() {
             Welcome Back
           </h2>
 
-          <p className="mt-2 text-md leading-none text-[var(--color-gray-dark)]">
-            Sign in to access YAKAP Dashboard
+          <p className="text-center text-sm mt-1 text-[var(--color-gray-dark)]">
+            Don't have an account?{' '}
+
+            <Link to="/signup" className="font-semibold text-[var(--color-primary)] hover:underline">
+              Register Now
+            </Link>
           </p>
         </div>
 

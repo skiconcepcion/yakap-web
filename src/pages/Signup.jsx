@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router'
 import { ChevronDown } from 'lucide-react'
 
 export default function Signup() {
@@ -46,10 +47,7 @@ export default function Signup() {
 
   const handleFacilityChange = (e) => {
     const value = e.target.value
-
     setFacility(value)
-
-    // Reset department whenever facility changes
     setDepartment('')
   }
 
@@ -57,11 +55,15 @@ export default function Signup() {
     <div>
       <div className="mb-12 text-center">
         <h2 className="text-3xl font-bold leading-sm tracking-tight">
-          Create YAKAP Portal Account
+          Create Account
         </h2>
 
-        <p className="mt-2 text-md leading-none text-[var(--color-gray-dark)]">
-          Join YAKAP Portal and create your account to get started today
+        <p className="text-center text-sm mt-1 text-[var(--color-gray-dark)]">
+          Already have an account?{' '}
+
+          <Link to="/" className="font-semibold text-[var(--color-primary)] hover:underline">
+            Login to Account
+          </Link>
         </p>
       </div>
 
