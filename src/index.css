@@ -10,18 +10,17 @@
 :root {
   font-family: "TextFont", sans-serif;
 
-  --color-primary: #ff6767;
-  --color-primary-light: #f9d9d9;
-  --color-primary-hover: #f63f3f;
+  --color-primary: #45664A;
+  --color-secondary: #FF9DB967;
+  --color-primary-light: #EEF4E7;
+  --color-primary-hover: #416649;
 
-  --color-gray: #efefef;
-
-  --color-text: #232323;
-  --color-text-light: #7d7d7d;
+  --color-text: #242424;
+  --color-gray-dark: #A1A1A1;
+  --color-gray-light: #F7F7F9;
 
   --color-background: #ffffff;
-  --color-border: #f0f0f2;
-}s
+}
 
 * {
   box-sizing: border-box;
