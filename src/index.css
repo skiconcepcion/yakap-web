@@ -1,1 +1,38 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: "TextFont";
+  src: url("./assets/fonts/GoogleSansFlex.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+:root {
+  font-family: "TextFont", sans-serif;
+
+  --color-primary: #ff6767;
+  --color-primary-light: #f9d9d9;
+  --color-primary-hover: #f63f3f;
+
+  --color-gray: #efefef;
+
+  --color-text: #232323;
+  --color-text-light: #7d7d7d;
+
+  --color-background: #ffffff;
+  --color-border: #f0f0f2;
+}s
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--color-background);
+  color: var(--color-text);
+}
