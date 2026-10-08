@@ -1,11 +1,14 @@
 import { useState } from 'react'
 import { Link } from 'react-router'
-import { ChevronDown, ChevronRight } from 'lucide-react'
+import { ChevronDown, ChevronRight, Eye, EyeOff } from 'lucide-react'
 
 export default function Signup() {
   const [password, setPassword] = useState('')
   const [facility, setFacility] = useState('')
   const [department, setDepartment] = useState('')
+
+  const [showPassword, setShowPassword] = useState(false)
+  const [showConfirmPassword, setShowConfirmPassword] = useState(false)
 
   const facilities = {
     'facility-a': {
@@ -216,15 +219,30 @@ export default function Signup() {
               Password
             </label>
 
-            <input
-              id="password"
-              name="password"
-              type="password"
-              placeholder="Create a password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              className="w-full rounded-lg bg-[var(--color-gray-light)] px-4 py-4 text-sm outline-none transition focus:ring-2 focus:ring-[var(--color-primary)]"
-            />
+            <div className="relative">
+              <input
+                id="password"
+                name="password"
+                type="password"
+                placeholder="Create a password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                className="w-full rounded-lg bg-[var(--color-gray-light)] px-4 py-4 text-sm outline-none transition focus:ring-2 focus:ring-[var(--color-primary)]"
+              />
+
+              <button
+                type="button"
+                onClick={() => setShowPassword((prev) => !prev)}
+                className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-500 transition hover:text-[var(--color-primary)]"
+                aria-label={ showPassword ? 'Hide password' : 'Show password' }
+              >
+                {showPassword ? (
+                  <EyeOff size={20} strokeWidth={2} />
+                ) : (
+                  <Eye size={20} strokeWidth={2} />
+                )}
+              </button>
+            </div>
 
             <div className="mt-2 flex items-center justify-between gap-4">
               <div className="flex flex-1 gap-1.5">
@@ -269,13 +287,28 @@ export default function Signup() {
               Confirm Password
             </label>
 
-            <input
-              id="confirm-password"
-              name="confirm-password"
-              type="password"
-              placeholder="Confirm your password"
-              className="w-full rounded-lg bg-[var(--color-gray-light)] px-4 py-4 text-sm outline-none transition focus:ring-2 focus:ring-[var(--color-primary)]"
-            />
+            <div className="relative">
+              <input
+                id="confirm-password"
+                name="confirm-password"
+                type="password"
+                placeholder="Confirm your password"
+                className="w-full rounded-lg bg-[var(--color-gray-light)] px-4 py-4 text-sm outline-none transition focus:ring-2 focus:ring-[var(--color-primary)]"
+              />
+
+              <button
+                type="button"
+                onClick={() => setShowConfirmPassword((prev) => !prev)}
+                className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-500 transition hover:text-[var(--color-primary)]"
+                aria-label={ showConfirmPassword ? 'Hide password' : 'Show password' }
+              >
+                {showConfirmPassword ? (
+                  <EyeOff size={20} strokeWidth={2} />
+                ) : (
+                  <Eye size={20} strokeWidth={2} />
+                )}
+              </button>
+            </div>
           </div>
         </div>
 
