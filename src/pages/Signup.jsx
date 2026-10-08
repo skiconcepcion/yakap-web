@@ -16,10 +16,12 @@ export default function Signup() {
         'Consultation',
       ],
     },
+
     'facility-b': {
       name: 'Facility B (Stand-alone Pharmacy)',
       departments: [],
     },
+
     'facility-c': {
       name: 'Facility C (Stand-alone Laboratory)',
       departments: [],
@@ -39,10 +41,7 @@ export default function Signup() {
 
   const passwordStrength = getPasswordStrength(password)
 
-  const strengthLabel =
-    ['Weak', 'Fair', 'Good', 'Strong'][passwordStrength - 1] ||
-    'Very Weak'
-
+  const strengthLabel = ['Weak', 'Fair', 'Good', 'Strong'][passwordStrength - 1] || 'Very Weak'
   const selectedFacility = facilities[facility]
 
   const handleFacilityChange = (e) => {
@@ -51,8 +50,11 @@ export default function Signup() {
     setDepartment('')
   }
 
+
   return (
     <div>
+
+      {/* SIGNUP HEADER */}
       <div className="mb-12 text-center">
         <h2 className="text-3xl font-bold leading-sm tracking-tight">
           Create Account
@@ -61,21 +63,21 @@ export default function Signup() {
         <p className="text-center text-sm mt-1 text-[var(--color-gray-dark)]">
           Already have an account?{' '}
 
-          <Link to="/" className="font-semibold text-[var(--color-primary)] hover:underline">
+          <Link to="/" className="group relative font-semibold text-[var(--color-primary)]">
             Login to Account
+            <span className="absolute -bottom-0.5 left-0 h-[2px] w-full origin-left scale-x-0 rounded-full bg-[var(--color-primary)] transition-transform duration-200 ease-out group-hover:scale-x-100"/>
           </Link>
         </p>
       </div>
 
+
+      {/* SIGNUP FORM */}
       <form className="space-y-6">
 
         {/* EMAIL + USERNAME */}
         <div className="grid grid-cols-2 gap-4">
           <div>
-            <label
-              htmlFor="email"
-              className="mb-1 block text-xs font-semibold"
-            >
+            <label htmlFor="email" className="mb-1 block text-xs font-semibold">
               Email
             </label>
 
@@ -89,10 +91,7 @@ export default function Signup() {
           </div>
 
           <div>
-            <label
-              htmlFor="username"
-              className="mb-1 block text-xs font-semibold"
-            >
+            <label htmlFor="username"  className="mb-1 block text-xs font-semibold">
               Username
             </label>
 
@@ -106,13 +105,9 @@ export default function Signup() {
           </div>
         </div>
 
-        {/* CONTACT NUMBER */}
         <div className="grid grid-cols-2 gap-4">
           <div>
-            <label
-              htmlFor="contact-number"
-              className="mb-1 block text-xs font-semibold"
-            >
+            <label htmlFor="contact-number" className="mb-1 block text-xs font-semibold">
               Contact Number
             </label>
 
@@ -128,8 +123,6 @@ export default function Signup() {
 
         {/* FACILITY + DEPARTMENT */}
         <div className="grid grid-cols-2 gap-4">
-
-          {/* FACILITY */}
           <div>
             <label htmlFor="facility" className="mb-1 block text-xs font-semibold">
               Facility
@@ -162,7 +155,6 @@ export default function Signup() {
             </div>
           </div>
 
-          {/* DEPARTMENT */}
           <div>
             <label htmlFor="department" className="mb-1 block text-xs font-semibold">
               Department
@@ -215,18 +207,12 @@ export default function Signup() {
               />
             </div>
           </div>
-
         </div>
 
         {/* PASSWORD + CONFIRM PASSWORD */}
         <div className="grid grid-cols-2 gap-4">
-
-          {/* PASSWORD */}
           <div>
-            <label
-              htmlFor="password"
-              className="mb-1 block text-xs font-semibold"
-            >
+            <label htmlFor="password" className="mb-1 block text-xs font-semibold">
               Password
             </label>
 
@@ -240,7 +226,6 @@ export default function Signup() {
               className="w-full rounded-lg bg-[var(--color-gray-light)] px-4 py-4 text-sm outline-none transition focus:ring-2 focus:ring-[var(--color-primary)]"
             />
 
-            {/* PASSWORD STRENGTH */}
             <div className="mt-2 flex items-center justify-between gap-4">
               <div className="flex flex-1 gap-1.5">
                 {[1, 2, 3, 4].map((bar) => (
@@ -279,12 +264,8 @@ export default function Signup() {
             </div>
           </div>
 
-          {/* CONFIRM PASSWORD */}
           <div>
-            <label
-              htmlFor="confirm-password"
-              className="mb-1 block text-xs font-semibold"
-            >
+            <label htmlFor="confirm-password" className="mb-1 block text-xs font-semibold">
               Confirm Password
             </label>
 
@@ -296,10 +277,9 @@ export default function Signup() {
               className="w-full rounded-lg bg-[var(--color-gray-light)] px-4 py-4 text-sm outline-none transition focus:ring-2 focus:ring-[var(--color-primary)]"
             />
           </div>
-
         </div>
 
-        {/* SUBMIT */}
+        {/* SUBMIT BUTTON */}
         <button
           type="submit"
           className="w-full rounded-xl bg-[var(--color-primary)] py-4 text-sm font-semibold text-white shadow-md transition hover:bg-[var(--color-primary-hover)] mt-1"
