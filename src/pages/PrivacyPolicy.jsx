@@ -72,8 +72,29 @@ export default function PrivacyPolicy() {
         {/* CONTENT + TABLE OF CONTENTS */}
         <div className="mx-auto grid w-full max-w-[1200px] grid-cols-1 gap-12 px-4 py-12 lg:grid-cols-[minmax(0,1fr)_260px] lg:px-8">
 
+          {/* RIGHT — TABLE OF CONTENTS */}
+          <aside className="order-first lg:order-last lg:sticky lg:top-8 lg:self-start">
+            <div className="border-l border-gray-200 pl-6">
+              <h3 className="text-sm font-bold">
+                Table of Contents
+              </h3>
+
+              <nav className="mt-4">
+                <ul className="space-y-1">
+                  {sections.map((section) => (
+                    <li key={section.id}>
+                      <a href={`#${section.id}`} className="block rounded-md px-3 py-2 text-sm text-[var(--color-gray-dark)] transition-colors hover:bg-gray-50 hover:text-[var(--color-primary)]">
+                        {section.label}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </nav>
+            </div>
+          </aside>
+
           {/* LEFT — POLICY CONTENT */}
-          <main className="min-w-0">
+          <main className="order-last min-w-0 lg:order-first">
 
             {/* INTRODUCTION */}
             <section id="introduction" className="scroll-mt-8">
@@ -399,28 +420,6 @@ export default function PrivacyPolicy() {
               </div>
             </section>
           </main>
-
-
-          {/* RIGHT — TABLE OF CONTENTS */}
-          <aside className="lg:sticky lg:top-8 lg:self-start">
-            <div className="border-l border-gray-200 pl-6">
-              <h3 className="text-sm font-bold">
-                Table of Contents
-              </h3>
-
-              <nav className="mt-4">
-                <ul className="space-y-1">
-                  {sections.map((section) => (
-                    <li key={section.id}>
-                      <a href={`#${section.id}`} className="block rounded-md px-3 py-2 text-sm text-[var(--color-gray-dark)] transition-colors hover:bg-gray-50 hover:text-[var(--color-primary)]">
-                        {section.label}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </nav>
-            </div>
-          </aside>
         </div>
 
 
