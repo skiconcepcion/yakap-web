@@ -11,14 +11,18 @@ const images = [
 
 const sections = [
   { id: 'introduction', label: 'Introduction' },
-  { id: 'information-we-collect', label: 'Information We Collect' },
-  { id: 'how-we-use-information', label: 'How We Use the Information' },
-  { id: 'how-we-share-information', label: 'How We Share the Information' },
-  { id: 'third-party-services', label: 'Third-Party Services' },
-  { id: 'protection-and-storage', label: 'Protection and Storage' },
-  { id: 'choices-and-rights', label: 'Your Choices and Rights' },
+  { id: 'acceptance', label: 'Acceptance of Terms' },
+  { id: 'eligibility', label: 'Eligibility and Account Registration' },
+  { id: 'use', label: 'Use of the YAKAP Portal' },
+  { id: 'orders-payments-transactions', label: 'Orders, Payments, and Transactions' },
+  { id: 'user-responsibilities', label: 'User Responsibilities' },
+  { id: 'intellectual-property', label: 'Intellectual Property' },
+  { id: 'third-party', label: 'Third-Party Services' },
+  { id: 'suspension', label: 'Suspension and Termination' },
+  { id: 'disclaimers', label: 'Disclaimers and Limitations of Liability' },
+  { id: 'changes', label: 'Changes to These Terms' },
+  { id: 'governing-law', label: 'Governing Law' },
   { id: 'contact', label: 'How to Contact Us' },
-  { id: 'changes', label: 'Changes to Privacy Policy' },
 ]
 
 export default function TermsOfService() {
@@ -104,32 +108,30 @@ export default function TermsOfService() {
 
               <div className="mt-4 space-y-4 leading-7">
                 <p>
-                  This is the Privacy Policy (“Policy”) for the YAKAP Portal Web App.
-                  We are committed to complying with the Philippine Data Privacy Act
-                  of 2012 (DPA). This Privacy Policy describes how we may collect,
-                  use, share, or otherwise process personal information, particularly
-                  in association with our system development practices and the
-                  operation of our website, email correspondence, and any of our
-                  social media channels (collectively, our “Platforms”).
+These Terms of Service (“Terms”) govern your access to and use of the YAKAP Portal Web App. By accessing, registering for, or using the YAKAP Portal, you acknowledge that you have read, understood, and agree to be bound by these Terms. These Terms establish the rules, conditions, and responsibilities that apply to your use of the website, its features, services, and functionalities (collectively, our “Platforms”).
                 </p>
 
                 <p>
-                  Please note that this Policy only pertains to our Platforms and
-                  the information and/or functionalities offered on them.
+Please note that these Terms only pertain to your use of the YAKAP Portal and the information and/or functionalities offered on the Platform.
                 </p>
 
                 <p>
-                  This Policy describes:
+                  This Terms describes:
                 </p>
 
                 <ul className="space-y-2">
-                  <li>A. The Types of Information We Collect</li>
-                  <li>B. How We Use the Information We Collect</li>
-                  <li>C. How We May Share the Information We Collect</li>
-                  <li>D. Third-Party Services and Content</li>
-                  <li>E. Protection and Storage of the Information We Collect</li>
-                  <li>F. Your Choices and Rights</li>
-                  <li>G. How to Contact Us</li>
+                  <li>A. Acceptance of Terms</li>
+                  <li>B. Eligibility and Account Registration</li>
+                  <li>C. Use of the YAKAP Portal</li>
+                  <li>D. Orders, Payments, and Transactions</li>
+                  <li>E. User Responsibilities</li>
+                  <li>F. Intellectual Property</li>
+                  <li>G. Third-Party Services</li>
+                  <li>H. Suspension and Termination</li>
+                  <li>I. Disclaimers and Limitations of Liability</li>
+                  <li>J. Changes to These Terms</li>
+                  <li>K. Governing Law</li>
+                  <li>L. How to Contact Us</li>
                 </ul>
               </div>
             </section>
@@ -143,282 +145,262 @@ export default function TermsOfService() {
 
               <div className="mt-4 space-y-4 leading-7">
                 <p>
+By accessing or using the YAKAP Portal Web App, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service (“Terms”), as well as any applicable policies and guidelines referenced herein. If you do not agree with these Terms, you should not access or use the YAKAP Portal.
+                </p>
+
+                                <p>
+These Terms apply to all users who access or use the YAKAP Portal, including registered users and other authorized users. Your continued use of the Platform following any updates to these Terms constitutes your acceptance of the revised Terms.
+                </p>
+              </div>
+            </section>
+
+
+            {/* INFORMATION WE COLLECT */}
+            <section id="information-we-collect" className="mt-12 scroll-mt-8">
+              <h2 className="text-2xl font-bold">
+                A. THE TYPES OF INFORMATION WE COLLECT
+              </h2>
+
+              <div className="mt-4 space-y-4 leading-7">
+                <p>
+Access to certain features and functionalities of the YAKAP Portal may require you to create and maintain an account. You agree to provide accurate, complete, and up-to-date information during registration and to keep such information updated when necessary.
+                </p>
+
+                                <p>
+You are responsible for maintaining the confidentiality of your account credentials and for all activities conducted through your account. You must not share your account credentials with unauthorized individuals or allow others to access your account.
+                </p>
+
+                                <p>
+If you believe that your account has been accessed or used without authorization, you should promptly notify the appropriate YAKAP Portal administrator.
+                </p>
+
+                                <p>
+We reserve the right to restrict, suspend, or terminate accounts that contain inaccurate information, are used improperly, or otherwise violate these Terms.
+                </p>
+              </div>
+            </section>
+
+
+                        {/* INFORMATION WE COLLECT */}
+            <section id="information-we-collect" className="mt-12 scroll-mt-8">
+              <h2 className="text-2xl font-bold">
+                A. THE TYPES OF INFORMATION WE COLLECT
+              </h2>
+
+              <div className="mt-4 space-y-4 leading-7">
+                <p>
+The YAKAP Portal is intended to provide users with access to its available services, information, account features, transactions, and other authorized functionalities.
+                </p>
+
+                                <p>
+You agree to use the Platform only for lawful and legitimate purposes and in accordance with these Terms. You must not use the Platform in any manner that may interfere with its operation, compromise its security, or negatively affect other users.
+                </p>
+
+                                <p>
+You must not attempt to gain unauthorized access to any account, system, database, or functionality of the YAKAP Portal. You must also not introduce malicious software, conduct unauthorized automated activities, or otherwise attempt to disrupt or compromise the Platform.
+                </p>
+              </div>
+            </section>
+
+
+                        {/* INFORMATION WE COLLECT */}
+            <section id="information-we-collect" className="mt-12 scroll-mt-8">
+              <h2 className="text-2xl font-bold">
+                A. THE TYPES OF INFORMATION WE COLLECT
+              </h2>
+
+              <div className="mt-4 space-y-4 leading-7">
+                <p>
+The YAKAP Portal may allow users to submit quotations, orders, payment information, payment documents, and other transaction-related information through the Platform.
+                </p>
+
+                                <p>
+You are responsible for reviewing the details of your transactions before submitting them and for ensuring that all information and documents provided are accurate, complete, and authentic.
+                </p>
+
+                                <p>
+Submission of an order or transaction does not necessarily constitute final acceptance or confirmation. Orders, payments, quotations, and other transactions may be subject to verification, approval, availability, and applicable policies.
+                </p>
+
+                                <p>
+Any payment information or proof of payment submitted through the Platform must be truthful and must correspond to the transaction for which it is provided. We reserve the right to review, reject, suspend, or cancel transactions where information is incomplete, inaccurate, unauthorized, or reasonably suspected to be fraudulent.
+                </p>
+              </div>
+            </section>
+
+
+                                    {/* INFORMATION WE COLLECT */}
+            <section id="information-we-collect" className="mt-12 scroll-mt-8">
+              <h2 className="text-2xl font-bold">
+                A. THE TYPES OF INFORMATION WE COLLECT
+              </h2>
+
+              <div className="mt-4 space-y-4 leading-7">
+                <p>
                   We collect your personal information when you provide it to us.
                   “Personal information” is any information that can be used to
                   identify you or that we can link to you. We may automatically
                   collect certain information when you use, access,
                   or interact with our Platforms. 
                 </p>
+              </div>
+            </section>
 
+
+                                    {/* INFORMATION WE COLLECT */}
+            <section id="information-we-collect" className="mt-12 scroll-mt-8">
+              <h2 className="text-2xl font-bold">
+                A. THE TYPES OF INFORMATION WE COLLECT
+              </h2>
+
+              <div className="mt-4 space-y-4 leading-7">
                 <p>
-                  Please note that this Policy only pertains to our Platforms and
-                  the information and/or functionalities offered on them.
+The YAKAP Portal and its content, including but not limited to its design, interface, text, graphics, logos, trademarks, software, databases, and other materials, are owned by or licensed to the organization operating the Platform and are protected by applicable intellectual property laws.
                 </p>
 
-                <p>
-                  This Policy describes:
+                                <p>
+You may access and use the Platform only for its intended purposes. You may not reproduce, modify, distribute, publish, transmit, sell, or otherwise exploit any portion of the Platform or its content without prior authorization, except where permitted by applicable law.
                 </p>
 
-                <ul className="space-y-2">
-                  <li>
-                    <span className="font-semibold">
-                      1. Information you provide to us.
-                    </span>{' '}
-                    We collect information that you provide to us, including when you
-                    communicate with us via email or other channels, including social media;
-                    when you sign up for an account; when you respond to our communications
-                    or requests for information; when you provide file or image access. The
-                    information you provide may include your name, contact information,
-                    email address, address, and other information about yourself. Some of
-                    our Platforms may require that you enter a password or other information
-                    in order to access certain features, and we collect such credentials
-                    when you enter them.
-                  </li>
+                                <p>
+Nothing in these Terms grants you ownership or any other rights to the Platform or its intellectual property beyond the limited right to use the Platform in accordance with these Terms.
 
-                  <li>
-                    <span className="font-semibold">
-                      2. Information we collect from other sources.
-                    </span>{' '}
-                    We may receive information about you from other sources, including third
-                    parties that help us: update, expand, and analyze our records; identify
-                    new customers; or prevent or detect fraud. The information we may receive
-                    is governed by the privacy settings and policies.
-                  </li>
-                </ul>
-              </div>
-            </section>
-
-
-            {/* HOW WE USE INFORMATION */}
-            <section id="how-we-use-information" className="mt-12 scroll-mt-8">
-              <h2 className="text-2xl font-bold">
-                B. HOW WE USE THE INFORMATION WE COLLECT
-              </h2>
-
-              <div className="mt-4 space-y-4 leading-7">
-                <ul className="space-y-2">
-                  <li>1. To aggregate information about you from multiple sources;</li>
-                  <li>2. To respond to your inquiries;</li>
-                  <li>3. To provide you with inquiries that you request;</li>
-                  <li>4. To process payment for any reservations that you made;</li>
-                  <li>5. To operate, troubleshoot, and improve the Platforms;</li>
-                  <li>6. To send you notifications, updates, and other information that may help you;</li>
-                  <li>7. To maintain our list of users;</li>
-                  <li>8. For system’s report purposes, including data analysis; report generation; detecting, preventing, and responding to actual or potential fraud, illegal activities, or intellectual property infringement;</li>
-                  <li>9. As we believe reasonably necessary or appropriate to: comply with our legal obligations respond to legal process or requests for information issued by the government authorities or other third parties; or protector your, our, or other’s rights;</li>
-                  <li>10. In another way that we indicate when we collect it; and</li>
-                  <li>11. Any other manner that you give us permission to do.</li>
-                </ul>
-              </div>
-            </section>
-
-
-            {/* HOW WE SHARE INFORMATION */}
-            <section id="how-we-share-information" className="mt-12 scroll-mt-8">
-              <h2 className="text-2xl font-bold">
-                C. HOW WE MAY SHARE THE INFORMATION WE COLLECT
-              </h2>
-
-              <div className="mt-4 space-y-4 leading-7">
-                <ul className="space-y-2">
-                  <li>
-                    1. We may share your information in a number of ways and circumstances.
-                    We may share your information in any way that we indicate at the time
-                    we collect it. We may also share the information we collect in other ways
-                    if you give us consent to those other ways.
-                  </li>
-                  
-                  <li>
-                    2. We do not sell, rent, or otherwise share information that reasonably
-                    identifies you with unaffiliated entities for their independent use except as
-                    expressly described in this Policy or with your prior permission. We may share
-                    information that does not reasonably identify you as permitted by applicable law.
-                  </li>
-                  
-                  <li>
-                    3. We may also disclose information we collect:
-                    <div className="mt-4 space-y-4 leading-7">
-                      <ul className="pl-8 space-y-2">
-                        <li>
-                          a. To our third-party service providers that perform services
-                          on our behalf, such as web-hosting companies, mailing vendors,
-                          analytics providers, and information technology providers.
-                        </li>
-                        
-                        <li>
-                          b. To law enforcement, other government authorities, or third parties
-                          (within or outside the jurisdiction in which you reside) as may be permitted
-                          or required by the laws of any jurisdiction that may apply to us;
-                          as provided for under contract; or as we deem reasonably necessary
-                          to provide you services. In these circumstances, we take reasonable efforts
-                          to notify you before we disclose information that may reasonably identify you,
-                          unless prior notice is prohibited by applicable law or is not possible or
-                          reasonable in the circumstances.
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
-                  
-                  <li>
-                    4. We may share anonymous, de-identified, or aggregate information that cannot
-                    reasonably identify you with others for any purpose, as permitted by applicable law.
-                  </li>
-                  
-                  <li>
-                    5. Grounds for using or processing your personal information. We rely on the following legal grounds to process your personal information, namely:
-                    <div className="mt-4 space-y-4 leading-7">
-                      <ul className="pl-8 space-y-2">
-                        <li>
-                          <span className="font-semibold">
-                            a. Consent.
-                          </span>{' '}
-                          By using our Platforms, you consent to our use of your personal
-                          information as described in this Policy. If you object to such use,
-                          please cease all uses of the Platforms. We may use precise location
-                          information as described in this Policy. You may be able to disable the
-                          sharing of location in your browser or mobile application settings.
-                        </li>
-
-                        <li>
-                          <span className="font-semibold">
-                            b. Legitimate interests.
-                          </span>{' '}
-                            We may use your personal information for our legitimate interest to
-                            improve our system and the content on our Platforms. Consistent with
-                            our legitimate interests and any choices that we offer or consents that
-                            may be required under applicable laws, we may use technical information
-                            as described in this Policy and use personal information for our administrative purposes. 
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
-                
-                </ul>
-              </div>
-            </section>
-
-
-            {/* THIRD-PARTY SERVICES AND CONTENT */}
-            <section id="third-party-services" className="mt-12 scroll-mt-8">
-              <h2 className="text-2xl font-bold">
-                D. THIRD-PARTY SERVICES AND CONTENT
-              </h2>
-
-              <div className="mt-4 space-y-4 leading-7">
-                <p>
-                  Our Platforms may include integrated content or links to content provided by third parties.
-                  This Policy does not address the privacy, security, or other practices of the third parties
-                  that provide such content. We may engage these parties that support the operation of our Platforms,
-                  such as email providers. These third parties may use technologies to track your online activities
-                  over time and across different websites and online platforms. Please see above how we use Cookies.
                 </p>
               </div>
             </section>
 
 
-            {/* PROTECTION AND STORAGE */}
-            <section id="protection-and-storage" className="mt-12 scroll-mt-8">
+                                    {/* INFORMATION WE COLLECT */}
+            <section id="information-we-collect" className="mt-12 scroll-mt-8">
               <h2 className="text-2xl font-bold">
-                E. PROTECTION AND STORAGE OF THE INFORMATION WE COLLECT
-              </h2>
-
-              <div className="mt-4 space-y-4 leading-7">
-                <ul className="space-y-2">
-                  <li>
-                    <span className="font-semibold">
-                      1. Legal Precautions.
-                    </span>{' '}
-                    We take reasonable precautions to comply with applicable legal requirements
-                    and safeguard the information that we collect. However, no information system
-                    can be 100% secure. So, we cannot guarantee the absolute security of your information.
-                    Moreover, we are not responsible for the security of information you transmit
-                    to us over networks that we do not control, including the Internet, telephone
-                    and wireless networks, or even the information technology infrastructure of any of our vendors.
-                  </li>
-
-                  <li>
-                    <span className="font-semibold">
-                      2. Location.
-                    </span>{' '}
-                      The system is created and managed by the people of BAJ Pharmaceuticals
-                      from 26 Timog Avenue, Diliman, Quezon City. 
-                  </li>
-                  
-                  <li>
-                    <span className="font-semibold">
-                      3. Children.
-                    </span>{' '}
-                      We do not knowingly collect information from children under the age of thirteen (13),
-                      and our Platforms are not targeted to children under the age of thirteen (13).
-                  </li>
-                </ul>
-              </div>
-            </section>
-
-
-            {/* CHOICES ADN RIGHTS */}
-            <section id="choices-and-rights" className="mt-12 scroll-mt-8">
-              <h2 className="text-2xl font-bold">
-                F. YOUR CHOICES AND RIGHTS
-              </h2>
-
-              <div className="mt-4 space-y-4 leading-7">
-                <ul className="space-y-2">
-                  <li>
-                    1. If you no longer wish to receive communications from us, you can let us know by
-                    sending us an email via our contact information provided on the footer of this website.
-                    Please note that if you opt-out of communications, we may still contact you
-                    such as thoseabout ongoing relations or administrative messages.
-                  </li>
-                  
-                  <li>
-                    2. Subject to local law, you may have certain rights regarding information that we have
-                    collected and that is related to you. We encourage you to contact us to update
-                    or correct your information if it changes or if you believe that any information
-                    that we have collected about you is inaccurate. You can also ask us to see what
-                    personal information we hold about you, to erase your personal information
-                    and you may tell us if you object to our use of your personal information.
-                    In some jurisdictions, you exercise the rights you may have,
-                    send us an email via our contact information.
-                  </li>
-                </ul>
-              </div>
-            </section>
-
-
-            {/* HOW TO CONTACT US*/}
-            <section id="contact" className="mt-12 scroll-mt-8">
-              <h2 className="text-2xl font-bold">
-                G. HOW TO CONTACT US
+                A. THE TYPES OF INFORMATION WE COLLECT
               </h2>
 
               <div className="mt-4 space-y-4 leading-7">
                 <p>
-                  We welcome your inquiries and comments. But please note that if you are not a
-                  verified user, we may not be able to treat the information you send us as
-                  confidential or privileged. If you wish to contact us regarding our system,
-                  please contact us directly at contact email address or by mail at{' '}
-                  <span className="font-semibold italic text-[var(--color-primary)]">
-                    sales@bajpharma.com
-                  </span>
+The YAKAP Portal may use or provide access to third-party services, platforms, applications, or content to support certain features or functionalities.
+                </p>
+
+                                <p>
+Third-party services may be governed by their own terms of service and privacy policies. We are not responsible for the policies, availability, security, or practices of third-party services that are outside our control.
+                </p>
+
+                                <p>
+Your use of any third-party service through or in connection with the YAKAP Portal may therefore be subject to the applicable terms and policies of that third party.
                 </p>
               </div>
             </section>
 
 
-            {/* CHANGES TO THIS PRIVACY POLICY */}
-            <section id="changes" className="mt-12 scroll-mt-8">
+                                    {/* INFORMATION WE COLLECT */}
+            <section id="information-we-collect" className="mt-12 scroll-mt-8">
               <h2 className="text-2xl font-bold">
-                H. CHANGES TO THIS PRIVACY POLICY
+                A. THE TYPES OF INFORMATION WE COLLECT
               </h2>
 
               <div className="mt-4 space-y-4 leading-7">
                 <p>
-                  We may update this Policy from time to time. The effective date of the current Policy
-                  is noted at the top of this page. We encourage you to periodically review this page
+We reserve the right to suspend, restrict, or terminate your access to the YAKAP Portal, in whole or in part, when reasonably necessary, including when you violate these Terms, engage in unauthorized or fraudulent activities, misuse the Platform, or pose a security or operational risk.
+                </p>
+
+                                <p>
+We may also restrict or terminate access when required by applicable law, regulation, or legitimate operational requirements.
+                </p>
+
+                                <p>
+If your account or access is terminated, you must cease using the Platform and must not attempt to regain access through unauthorized means.
+                </p>
+
+                                <p>
+Termination of access does not affect any rights, obligations, or responsibilities that arose before termination or that are intended to survive termination under these Terms.
                 </p>
               </div>
             </section>
+
+
+                                    {/* INFORMATION WE COLLECT */}
+            <section id="information-we-collect" className="mt-12 scroll-mt-8">
+              <h2 className="text-2xl font-bold">
+                A. THE TYPES OF INFORMATION WE COLLECT
+              </h2>
+
+              <div className="mt-4 space-y-4 leading-7">
+                <p>
+The YAKAP Portal is provided for its intended business and operational purposes. While we make reasonable efforts to maintain the accuracy, security, availability, and functionality of the Platform, we do not guarantee that the Platform will always be available, uninterrupted, error-free, or free from security vulnerabilities.
+                </p>
+
+                                <p>
+   The Platform may occasionally be unavailable due to maintenance, technical issues, system updates, connectivity problems, or circumstances beyond our reasonable control.
+                </p>
+
+                                <p>
+To the extent permitted by applicable law, we shall not be responsible for losses or damages arising from unauthorized access caused by circumstances beyond our reasonable control, interruptions to the Platform, or a user's failure to comply with these Terms.
+                </p>
+
+                                <p>
+Nothing in these Terms is intended to exclude or limit any liability that cannot legally be excluded or limited under applicable law.
+                </p>
+              </div>
+            </section>
+
+
+                                    {/* INFORMATION WE COLLECT */}
+            <section id="information-we-collect" className="mt-12 scroll-mt-8">
+              <h2 className="text-2xl font-bold">
+                A. THE TYPES OF INFORMATION WE COLLECT
+              </h2>
+
+              <div className="mt-4 space-y-4 leading-7">
+                <p>
+We may update or modify these Terms from time to time to reflect changes to the YAKAP Portal, our services, operational practices, or applicable laws and regulations.
+                </p>
+
+                                <p>
+When changes are made, the updated Terms will be posted on this page together with a revised “Last Updated” date. Your continued use of the YAKAP Portal after the updated Terms become effective constitutes your acknowledgment and acceptance of the changes.
+                </p>
+
+                                <p>
+     We encourage you to review these Terms periodically to remain informed about the conditions governing your use of the Platform.
+                </p>
+              </div>
+            </section>
+
+
+                                    {/* INFORMATION WE COLLECT */}
+            <section id="information-we-collect" className="mt-12 scroll-mt-8">
+              <h2 className="text-2xl font-bold">
+                A. THE TYPES OF INFORMATION WE COLLECT
+              </h2>
+
+              <div className="mt-4 space-y-4 leading-7">
+                <p>
+These Terms shall be governed by and interpreted in accordance with the applicable laws of the Republic of the Philippines, without regard to its conflict-of-law principles.
+                </p>
+
+                                <p>
+Any disputes arising from or relating to your use of the YAKAP Portal or these Terms shall be subject to the applicable laws, rules, and regulations of the Republic of the Philippines and the appropriate courts or authorities with jurisdiction.
+                </p>
+              </div>
+            </section>
+
+
+                                    {/* INFORMATION WE COLLECT */}
+            <section id="information-we-collect" className="mt-12 scroll-mt-8">
+              <h2 className="text-2xl font-bold">
+                A. THE TYPES OF INFORMATION WE COLLECT
+              </h2>
+
+              <div className="mt-4 space-y-4 leading-7">
+                <p>
+If you have questions, concerns, or requests regarding these Terms of Service or your use of the YAKAP Portal, you may contact the organization or authorized administrator through the official contact information provided on the Platform.
+                </p>
+
+                                <p>
+We encourage users to contact us promptly regarding any concerns involving their account, transactions, unauthorized access, or suspected misuse of the YAKAP Portal.
+                </p>
+              </div>
+            </section>
+
           </main>
         </div>
 
