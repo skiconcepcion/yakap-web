@@ -77,7 +77,7 @@ export default function Login() {
         {/* SUBMIT BUTTON*/}
         <button
           type="submit"
-          className="w-full rounded-xl bg-[var(--color-primary)] py-4 text-sm font-semibold text-white shadow-md transition hover:bg-[var(--color-primary-hover)] mt-1"
+          className="w-full rounded-xl bg-[var(--color-primary)] py-4 text-sm font-semibold text-white shadow-md transition hover:bg-[var(--color-secondary)] mt-1"
         >
           Login to Account
         </button>
