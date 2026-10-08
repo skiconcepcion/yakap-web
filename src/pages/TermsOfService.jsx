@@ -18,7 +18,7 @@ const sections = [
   { id: 'protection-and-storage', label: 'Protection and Storage' },
   { id: 'choices-and-rights', label: 'Your Choices and Rights' },
   { id: 'contact', label: 'How to Contact Us' },
-  { id: 'changes', label: 'Changes to This Privacy Policy' },
+  { id: 'changes', label: 'Changes to Privacy Policy' },
 ]
 
 export default function TermsOfService() {
