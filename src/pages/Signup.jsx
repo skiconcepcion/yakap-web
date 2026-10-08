@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router'
-import { ChevronDown } from 'lucide-react'
+import { ChevronDown, ChevronRight } from 'lucide-react'
 
 export default function Signup() {
   const [password, setPassword] = useState('')
@@ -282,10 +282,11 @@ export default function Signup() {
         {/* SUBMIT BUTTON */}
         <button
           type="submit"
-          className="w-full rounded-xl bg-[var(--color-primary)] py-4 text-sm font-semibold text-white shadow-md transition hover:bg-[var(--color-primary-hover)] mt-1"
+          className="mt-1 flex w-full items-center justify-center gap-1 rounded-xl bg-[var(--color-primary)] py-4 text-sm font-semibold text-white shadow-md transition hover:bg-[var(--color-primary-hover)]"
         >
           Create Account
-        </button>
+          <ChevronRight size={18} strokeWidth={3} className="pointer-events-none"/>
+        </button>  
 
       </form>
     </div>

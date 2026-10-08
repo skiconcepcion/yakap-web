@@ -1,12 +1,11 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router'
-import { MoveLeft } from 'lucide-react'
+import { MoveLeft, ChevronRight } from 'lucide-react'
 
 const images = [
-  '/login-1.png',
   '/login-2.png',
-  '/login-3.png',
   '/login-4.jpeg',
+  '/login-1.png',
 ]
 
 const sections = [
@@ -53,7 +52,13 @@ export default function PrivacyPolicy() {
           {/* BACK BUTTON */}
           <Link to="/" className="absolute left-6 top-6 z-10 flex items-center gap-2 rounded-full bg-[var(--color-primary)] px-4 py-2 text-sm font-semibold text-white shadow-sm backdrop-blur-sm transition-all duration-200 hover:bg-[var(--color-secondary)] hover:shadow-md">
             <MoveLeft size={18} strokeWidth={2} className="pointer-events-none"/>
-            Back
+            Back to Login
+          </Link>
+
+          {/* TERMS OF SERVICE BUTTON */}
+          <Link to="/terms-of-service" className="absolute right-6 top-6 z-10 flex items-center gap-1 rounded-full bg-[var(--color-primary)] px-4 py-2 text-sm font-semibold text-white shadow-sm backdrop-blur-sm transition-all duration-200 hover:bg-[var(--color-secondary)] hover:shadow-md">
+            Terms of Service
+            <ChevronRight size={18} strokeWidth={3} className="pointer-events-none"/>
           </Link>
 
           <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/50 to-transparent p-8">
