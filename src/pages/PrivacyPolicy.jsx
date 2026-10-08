@@ -122,7 +122,7 @@ export default function PrivacyPolicy() {
                   This Policy describes:
                 </p>
 
-                <ul className="space-y-2">
+                <ul className="pl-8 space-y-2">
                   <li>A. The Types of Information We Collect</li>
                   <li>B. How We Use the Information We Collect</li>
                   <li>C. How We May Share the Information We Collect</li>
