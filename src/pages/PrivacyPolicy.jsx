@@ -200,18 +200,49 @@ export default function PrivacyPolicy() {
 
               <div className="mt-4 space-y-4 leading-7">
                 <ul className="space-y-2">
-                  <li>1. We may share your information in a number of ways and circumstances. We may share your information in any way that we indicate at the time we collect it. We may also share the information we collect in other ways if you give us consent to those other ways. </li>
-                  <li>2. We do not sell, rent, or otherwise share information that reasonably identifies you with unaffiliated entities for their independent use except as expressly described in this Policy or with your prior permission. We may share information that does not reasonably identify you as permitted by applicable law. </li>
+                  <li>
+                    1. We may share your information in a number of ways and circumstances.
+                    We may share your information in any way that we indicate at the time
+                    we collect it. We may also share the information we collect in other ways
+                    if you give us consent to those other ways.
+                  </li>
+                  
+                  <li>
+                    2. We do not sell, rent, or otherwise share information that reasonably
+                    identifies you with unaffiliated entities for their independent use except as
+                    expressly described in this Policy or with your prior permission. We may share
+                    information that does not reasonably identify you as permitted by applicable law.
+                  </li>
+                  
                   <li>
                     3. We may also disclose information we collect:
                     <div className="mt-4 space-y-4 leading-7">
                       <ul className="pl-8 space-y-2">
-                        <li>a. To our third-party service providers that perform services on our behalf, such as web-hosting companies, mailing vendors, analytics providers, and information technology providers.</li>
-                        <li>b. To law enforcement, other government authorities, or third parties (within or outside the jurisdiction in which you reside) as may be permitted or required by the laws of any jurisdiction that may apply to us; as provided for under contract; or as we deem reasonably necessary to provide you services. In these circumstances, we take reasonable efforts to notify you before we disclose information that may reasonably identify you, unless prior notice is prohibited by applicable law or is not possible or reasonable in the circumstances.</li>
+                        <li>
+                          a. To our third-party service providers that perform services
+                          on our behalf, such as web-hosting companies, mailing vendors,
+                          analytics providers, and information technology providers.
+                        </li>
+                        
+                        <li>
+                          b. To law enforcement, other government authorities, or third parties
+                          (within or outside the jurisdiction in which you reside) as may be permitted
+                          or required by the laws of any jurisdiction that may apply to us;
+                          as provided for under contract; or as we deem reasonably necessary
+                          to provide you services. In these circumstances, we take reasonable efforts
+                          to notify you before we disclose information that may reasonably identify you,
+                          unless prior notice is prohibited by applicable law or is not possible or
+                          reasonable in the circumstances.
+                        </li>
                       </ul>
                     </div>
                   </li>
-                  <li>4. We may share anonymous, de-identified, or aggregate information that cannot reasonably identify you with others for any purpose, as permitted by applicable law.</li>
+                  
+                  <li>
+                    4. We may share anonymous, de-identified, or aggregate information that cannot
+                    reasonably identify you with others for any purpose, as permitted by applicable law.
+                  </li>
+                  
                   <li>
                     5. Grounds for using or processing your personal information. We rely on the following legal grounds to process your personal information, namely:
                     <div className="mt-4 space-y-4 leading-7">
@@ -220,14 +251,22 @@ export default function PrivacyPolicy() {
                           <span className="font-semibold">
                             a. Consent.
                           </span>{' '}
-                          By using our Platforms, you consent to our use of your personal information as described in this Policy. If you object to such use, please cease all uses of the Platforms. We may use precise location information as described in this Policy. You may be able to disable the sharing of location in your browser or mobile application settings.
+                          By using our Platforms, you consent to our use of your personal
+                          information as described in this Policy. If you object to such use,
+                          please cease all uses of the Platforms. We may use precise location
+                          information as described in this Policy. You may be able to disable the
+                          sharing of location in your browser or mobile application settings.
                         </li>
 
                         <li>
                           <span className="font-semibold">
                             b. Legitimate interests.
                           </span>{' '}
-                            We may use your personal information for our legitimate interest to improve our system and the content on our Platforms. Consistent with our legitimate interests and any choices that we offer or consents that may be required under applicable laws, we may use technical information as described in this Policy and use personal information for our administrative purposes. 
+                            We may use your personal information for our legitimate interest to
+                            improve our system and the content on our Platforms. Consistent with
+                            our legitimate interests and any choices that we offer or consents that
+                            may be required under applicable laws, we may use technical information
+                            as described in this Policy and use personal information for our administrative purposes. 
                         </li>
                       </ul>
                     </div>
@@ -246,7 +285,11 @@ export default function PrivacyPolicy() {
 
               <div className="mt-4 space-y-4 leading-7">
                 <p>
-                  Our Platforms may include integrated content or links to content provided by third parties. This Policy does not address the privacy, security, or other practices of the third parties that provide such content. We may engage these parties that support the operation of our Platforms, such as email providers. These third parties may use technologies to track your online activities over time and across different websites and online platforms. Please see above how we use Cookies.
+                  Our Platforms may include integrated content or links to content provided by third parties.
+                  This Policy does not address the privacy, security, or other practices of the third parties
+                  that provide such content. We may engage these parties that support the operation of our Platforms,
+                  such as email providers. These third parties may use technologies to track your online activities
+                  over time and across different websites and online platforms. Please see above how we use Cookies.
                 </p>
               </div>
             </section>
@@ -264,21 +307,28 @@ export default function PrivacyPolicy() {
                     <span className="font-semibold">
                       1. Legal Precautions.
                     </span>{' '}
-                    We take reasonable precautions to comply with applicable legal requirements and safeguard the information that we collect. However, no information system can be 100% secure. So, we cannot guarantee the absolute security of your information. Moreover, we are not responsible for the security of information you transmit to us over networks that we do not control, including the Internet, telephone and wireless networks, or even the information technology infrastructure of any of our vendors.
+                    We take reasonable precautions to comply with applicable legal requirements
+                    and safeguard the information that we collect. However, no information system
+                    can be 100% secure. So, we cannot guarantee the absolute security of your information.
+                    Moreover, we are not responsible for the security of information you transmit
+                    to us over networks that we do not control, including the Internet, telephone
+                    and wireless networks, or even the information technology infrastructure of any of our vendors.
                   </li>
 
                   <li>
                     <span className="font-semibold">
                       2. Location.
                     </span>{' '}
-                      The system is created and managed by the people of BAJ Pharmaceuticals from 26 Timog Avenue, Diliman, Quezon City. 
+                      The system is created and managed by the people of BAJ Pharmaceuticals
+                      from 26 Timog Avenue, Diliman, Quezon City. 
                   </li>
                   
                   <li>
                     <span className="font-semibold">
                       3. Children.
                     </span>{' '}
-                      We do not knowingly collect information from children under the age of thirteen (13), and our Platforms are not targeted to children under the age of thirteen (13).
+                      We do not knowingly collect information from children under the age of thirteen (13),
+                      and our Platforms are not targeted to children under the age of thirteen (13).
                   </li>
                 </ul>
               </div>
@@ -293,8 +343,23 @@ export default function PrivacyPolicy() {
 
               <div className="mt-4 space-y-4 leading-7">
                 <ul className="space-y-2">
-                  <li>1. If you no longer wish to receive communications from us, you can let us know by sending us an email via our contact information provided on the footer of this website. Please note that if you opt-out of communications, we may still contact you such as those about ongoing relations or administrative messages.</li>
-                  <li>2. Subject to local law, you may have certain rights regarding information that we have collected and that is related to you. We encourage you to contact us to update or correct your information if it changes or if you believe that any information that we have collected about you is inaccurate. You can also ask us to see what personal information we hold about you, to erase your personal information and you may tell us if you object to our use of your personal information. In some jurisdictions, you exercise the rights you may have, send us an email via our contact information.</li>
+                  <li>
+                    1. If you no longer wish to receive communications from us, you can let us know by
+                    sending us an email via our contact information provided on the footer of this website.
+                    Please note that if you opt-out of communications, we may still contact you
+                    such as thoseabout ongoing relations or administrative messages.
+                  </li>
+                  
+                  <li>
+                    2. Subject to local law, you may have certain rights regarding information that we have
+                    collected and that is related to you. We encourage you to contact us to update
+                    or correct your information if it changes or if you believe that any information
+                    that we have collected about you is inaccurate. You can also ask us to see what
+                    personal information we hold about you, to erase your personal information
+                    and you may tell us if you object to our use of your personal information.
+                    In some jurisdictions, you exercise the rights you may have,
+                    send us an email via our contact information.
+                  </li>
                 </ul>
               </div>
             </section>
@@ -308,7 +373,13 @@ export default function PrivacyPolicy() {
 
               <div className="mt-4 space-y-4 leading-7">
                 <p>
-                  We welcome your inquiries and comments. But please note that if you are not a verified user, we may not be able to treat the information you send us as confidential or privileged. If you wish to contact us regarding our system, please contact us directly at contact email address or by mail at sales@bajpharma.com
+                  We welcome your inquiries and comments. But please note that if you are not a
+                  verified user, we may not be able to treat the information you send us as
+                  confidential or privileged. If you wish to contact us regarding our system,
+                  please contact us directly at contact email address or by mail at{' '}
+                  <span className="font-semibold italic text-[var(--color-primary)]">
+                    sales@bajpharma.com
+                  </span>
                 </p>
               </div>
             </section>
@@ -322,7 +393,8 @@ export default function PrivacyPolicy() {
 
               <div className="mt-4 space-y-4 leading-7">
                 <p>
-                  We may update this Policy from time to time. The effective date of the current Policy is noted at the top of this page. We encourage you to periodically review this page
+                  We may update this Policy from time to time. The effective date of the current Policy
+                  is noted at the top of this page. We encourage you to periodically review this page
                 </p>
               </div>
             </section>
