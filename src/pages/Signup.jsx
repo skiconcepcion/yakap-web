@@ -10,6 +10,8 @@ export default function Signup() {
   const [showPassword, setShowPassword] = useState(false)
   const [showConfirmPassword, setShowConfirmPassword] = useState(false)
 
+
+  /* FACILITIES HELPERS */
   const facilities = {
     'facility-a': {
       name: 'Facility A (Hospital)',
@@ -31,6 +33,16 @@ export default function Signup() {
     },
   }
 
+  const selectedFacility = facilities[facility]
+
+  const handleFacilityChange = (e) => {
+    const value = e.target.value
+    setFacility(value)
+    setDepartment('')
+  }
+
+  
+  /* PASSWORD HELPERS */
   const getPasswordStrength = (password) => {
     let score = 0
 
@@ -43,15 +55,7 @@ export default function Signup() {
   }
 
   const passwordStrength = getPasswordStrength(password)
-
   const strengthLabel = ['Weak', 'Fair', 'Good', 'Strong'][passwordStrength - 1] || 'Very Weak'
-  const selectedFacility = facilities[facility]
-
-  const handleFacilityChange = (e) => {
-    const value = e.target.value
-    setFacility(value)
-    setDepartment('')
-  }
 
 
   return (
@@ -169,17 +173,9 @@ export default function Signup() {
                 name="department"
                 value={department}
                 onChange={(e) => setDepartment(e.target.value)}
-                disabled={
-                  !facility ||
-                  !selectedFacility ||
-                  selectedFacility.departments.length === 0
-                }
+                disabled={ !facility || !selectedFacility || selectedFacility.departments.length === 0 }
                 className={`w-full appearance-none rounded-lg px-4 py-4 pr-11 text-sm outline-none transition focus:ring-2 focus:ring-[var(--color-primary)] ${
-                  !facility ||
-                  !selectedFacility ||
-                  selectedFacility.departments.length === 0
-                    ? 'cursor-not-allowed bg-gray-100 text-gray-400'
-                    : 'bg-[var(--color-gray-light)]'
+                  !facility || !selectedFacility || selectedFacility.departments.length === 0 ? 'cursor-not-allowed bg-gray-100 text-gray-400' : 'bg-[var(--color-gray-light)]'
                 }`}
               >
                 <option value="" disabled>
@@ -201,11 +197,7 @@ export default function Signup() {
                 size={18}
                 strokeWidth={2}
                 className={`pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 ${
-                  !facility ||
-                  !selectedFacility ||
-                  selectedFacility.departments.length === 0
-                    ? 'text-gray-400'
-                    : 'text-[var(--color-gray-dark)]'
+                  !facility || !selectedFacility || selectedFacility.departments.length === 0 ? 'text-gray-400' : 'text-[var(--color-gray-dark)]'
                 }`}
               />
             </div>
