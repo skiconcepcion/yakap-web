@@ -9,11 +9,17 @@ const images = [
 ]
 
 export default function AuthLayout() {
-  const location = useLocation()
 
   const [currentImage, setCurrentImage] = useState(0)
 
-  const isSignup = location.pathname === '/signup'
+  const { pathname } = useLocation()
+
+  const isSignup = pathname === '/signup'
+  const isForgotPassword = pathname === '/forgot-password'
+
+  const imageWidth = isForgotPassword ? 65 : isSignup ? 45 : 70
+
+  console.log({ pathname, isSignup, isForgotPassword, imageWidth })
 
 
   useEffect(() => {
@@ -26,52 +32,72 @@ export default function AuthLayout() {
 
 
   return (
-    <div className="h-screen overflow-hidden bg-white p-4 sm:p-5">
-      <div className="flex h-full w-full">
+    <div className="min-h-screen overflow-x-hidden bg-white p-4 sm:p-5">
+      <div className="flex min-h-[calc(100vh-2rem)] w-full sm:min-h-[calc(100vh-2.5rem)]">
 
         {/* IMAGE */}
-        <div className={`relative h-full shrink-0 overflow-hidden rounded-[20px] transition-[width] duration-700 ease-in-out ${ isSignup ? 'w-[45%]' : 'w-[70%]' }`}>
+        <div
+          style={{ width: `${imageWidth}%` }}
+          className="relative min-h-[calc(100vh-2rem)] shrink-0 overflow-hidden rounded-[20px] transition-[width] duration-700 ease-in-out sm:min-h-[calc(100vh-2.5rem)]"
+        >
           {images.map((image, index) => (
             <img
               key={image}
               src={image}
               alt=""
-              className={`absolute inset-0 h-full w-full object-cover object-center transition-opacity duration-[1500ms] ease-in-out ${ index === currentImage ? 'opacity-100': 'opacity-0' }`}
+              className={`absolute inset-0 h-full w-full object-cover object-center transition-opacity duration-[1500ms] ease-in-out ${
+                index === currentImage ? 'opacity-100' : 'opacity-0'
+              }`}
             />
           ))}
 
+          {/* LOGO */}
           <div className="absolute left-6 top-6 z-10">
             <div className="absolute -inset-8 rounded-full bg-white/95 blur-2xl" />
-            <img src="/logo.png" alt="YAKAP Portal" className="relative h-20 w-auto"/>
+            <img
+              src="/logo.png"
+              alt="YAKAP Portal"
+              className="relative h-20 w-auto"
+            />
           </div>
         </div>
 
-
         {/* FORM AREA */}
-        <div className={`flex h-full min-w-0 items-center justify-center transition-[width] duration-700 ease-in-out ${ isSignup ? 'w-[55%]' : 'w-[30%]' }`}>
-          <div className="flex h-full w-full max-w-[800px] flex-col justify-between px-8 py-8 sm:px-10 lg:px-12">
+        <div style={{ width: `${100 - imageWidth}%` }} className="flex min-w-0 shrink-0 items-center justify-center transition-[width] duration-700 ease-in-out">
+          <div className="flex min-h-[calc(100vh-2rem)] w-full max-w-[800px] flex-col justify-between px-8 py-8 sm:min-h-[calc(100vh-2.5rem)] sm:px-10 lg:px-12">
 
-            { isSignup ? null : <div/> }
+            { isSignup ? null : <div /> }
 
             <Outlet />
 
-            <p className="text-center text-sm">
-              By continuing, you agree to our {' '}
+            {/* PRIVACY AND TERMS */}
+            { isForgotPassword                
+                ? <p className="text-center text-sm">
+                    <Link to="/" className="group relative font-semibold text-[var(--color-primary)]">
+                      Go Back to Login
+                      <span className="absolute -bottom-0.5 left-0 h-[2px] w-full origin-left scale-x-0 rounded-full bg-[var(--color-primary)] transition-transform duration-200 ease-out group-hover:scale-x-100" />
+                    </Link>
+                  </p>
 
-              <Link to="/privacy-policy" className="group relative font-semibold text-[var(--color-primary)]">
-                Privacy Policy
-                <span className="absolute -bottom-0.5 left-0 h-[2px] w-full origin-left scale-x-0 rounded-full bg-[var(--color-primary)] transition-transform duration-200 ease-out group-hover:scale-x-100"/>
-              </Link>
 
-              {' '} and {' '}
+                : <p className="text-center text-sm">
+                    By continuing, you agree to our{' '}
 
-              <Link to="/terms-of-service" className="group relative font-semibold text-[var(--color-primary)]">
-                Terms of Service
-                <span className="absolute -bottom-0.5 left-0 h-[2px] w-full origin-left scale-x-0 rounded-full bg-[var(--color-primary)] transition-transform duration-200 ease-out group-hover:scale-x-100"/>
-              </Link>
+                    <Link to="/privacy-policy" className="group relative font-semibold text-[var(--color-primary)]">
+                      Privacy Policy
+                      <span className="absolute -bottom-0.5 left-0 h-[2px] w-full origin-left scale-x-0 rounded-full bg-[var(--color-primary)] transition-transform duration-200 ease-out group-hover:scale-x-100" />
+                    </Link>
 
-              .
-            </p>
+                    {' '}and{' '}
+
+                    <Link to="/terms-of-service" className="group relative font-semibold text-[var(--color-primary)]">
+                      Terms of Service
+                      <span className="absolute -bottom-0.5 left-0 h-[2px] w-full origin-left scale-x-0 rounded-full bg-[var(--color-primary)] transition-transform duration-200 ease-out group-hover:scale-x-100" />
+                    </Link>
+
+                    .
+                  </p>
+            }
           </div>
         </div>
 
