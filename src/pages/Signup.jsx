@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router'
-import { ChevronDown, ChevronRight, Eye, EyeOff } from 'lucide-react'
+import { ChevronDown, ChevronRight, Eye, EyeOff, UserRound, Mail, Lock, Phone, UsersRound, Hospital } from 'lucide-react'
 
 export default function Signup() {
   const [password, setPassword] = useState('')
@@ -88,13 +88,17 @@ export default function Signup() {
               Email
             </label>
 
-            <input
-              id="email"
-              name="email"
-              type="email"
-              placeholder="Enter your email"
-              className="w-full rounded-lg bg-[var(--color-gray-light)] px-4 py-4 text-sm outline-none transition focus:ring-2 focus:ring-[var(--color-primary)]"
-            />
+            <div className="group relative">
+              <Mail size={18} strokeWidth={2} className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-[var(--color-gray-dark)] group-focus-within:text-[var(--color-primary)]"/>
+
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="Enter your email"
+                className="w-full rounded-lg bg-[var(--color-gray-light)] py-4 pl-11 pr-4 text-sm outline-none transition focus:ring-2 focus:ring-[var(--color-primary)]"
+              />
+            </div>
           </div>
 
           <div>
@@ -102,13 +106,17 @@ export default function Signup() {
               Username
             </label>
 
-            <input
-              id="username"
-              name="username"
-              type="text"
-              placeholder="Create your username"
-              className="w-full rounded-lg bg-[var(--color-gray-light)] px-4 py-4 text-sm outline-none transition focus:ring-2 focus:ring-[var(--color-primary)]"
-            />
+            <div className="group relative">
+              <UserRound size={18} strokeWidth={2} className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-[var(--color-gray-dark)] group-focus-within:text-[var(--color-primary)]"/>
+              
+              <input
+                id="username"
+                name="username"
+                type="text"
+                placeholder="Create your username"
+                className="w-full rounded-lg bg-[var(--color-gray-light)] py-4 pl-11 pr-4 text-sm outline-none transition focus:ring-2 focus:ring-[var(--color-primary)]"
+              />
+            </div>
           </div>
         </div>
 
@@ -118,13 +126,17 @@ export default function Signup() {
               Contact Number
             </label>
 
-            <input
-              id="contact-number"
-              name="contact-number"
-              type="tel"
-              placeholder="Enter your contact number"
-              className="w-full rounded-lg bg-[var(--color-gray-light)] px-4 py-4 text-sm outline-none transition focus:ring-2 focus:ring-[var(--color-primary)]"
-            />
+            <div className="group relative">
+              <Phone size={18} strokeWidth={2} className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-[var(--color-gray-dark)] group-focus-within:text-[var(--color-primary)]"/>
+
+              <input
+                id="contact-number"
+                name="contact-number"
+                type="tel"
+                placeholder="Enter your contact number"
+                className="w-full rounded-lg bg-[var(--color-gray-light)] py-4 pl-11 pr-4 text-sm outline-none transition focus:ring-2 focus:ring-[var(--color-primary)]"
+              />
+            </div>
           </div>
         </div>
 
@@ -135,13 +147,15 @@ export default function Signup() {
               Facility
             </label>
 
-            <div className="relative">
+            <div className="group relative">
+              <Hospital size={18} strokeWidth={2} className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-[var(--color-gray-dark)] group-focus-within:text-[var(--color-primary)]"/>
+
               <select
                 id="facility"
                 name="facility"
                 value={facility}
                 onChange={handleFacilityChange}
-                className="w-full appearance-none rounded-lg bg-[var(--color-gray-light)] px-4 py-4 pr-11 text-sm outline-none transition focus:ring-2 focus:ring-[var(--color-primary)]"
+                className="w-full appearance-none rounded-lg bg-[var(--color-gray-light)] py-4 pl-11 pr-4 text-sm outline-none transition focus:ring-2 focus:ring-[var(--color-primary)]"
               >
                 <option value="" disabled>
                   Select a facility
@@ -167,14 +181,16 @@ export default function Signup() {
               Department
             </label>
 
-            <div className="relative">
+            <div className="group relative">
+              <UsersRound size={18} strokeWidth={2} className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-[var(--color-gray-dark)] group-focus-within:text-[var(--color-primary)]"/>
+
               <select
                 id="department"
                 name="department"
                 value={department}
                 onChange={(e) => setDepartment(e.target.value)}
                 disabled={ !facility || !selectedFacility || selectedFacility.departments.length === 0 }
-                className={`w-full appearance-none rounded-lg px-4 py-4 pr-11 text-sm outline-none transition focus:ring-2 focus:ring-[var(--color-primary)] ${
+                className={`w-full appearance-none rounded-lg py-4 pl-11 pr-4 text-sm outline-none transition focus:ring-2 focus:ring-[var(--color-primary)] ${
                   !facility || !selectedFacility || selectedFacility.departments.length === 0 ? 'cursor-not-allowed bg-gray-100 text-gray-400' : 'bg-[var(--color-gray-light)]'
                 }`}
               >
@@ -211,15 +227,17 @@ export default function Signup() {
               Password
             </label>
 
-            <div className="relative">
+            <div className="group relative">
+              <Lock size={18} strokeWidth={2} className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-[var(--color-gray-dark)] group-focus-within:text-[var(--color-primary)]"/>
+
               <input
                 id="password"
                 name="password"
-                type="password"
+                type={showPassword ? 'text' : 'password'}
                 placeholder="Create a password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="w-full rounded-lg bg-[var(--color-gray-light)] px-4 py-4 text-sm outline-none transition focus:ring-2 focus:ring-[var(--color-primary)]"
+                className="w-full rounded-lg bg-[var(--color-gray-light)] py-4 pl-11 pr-4 text-sm outline-none transition focus:ring-2 focus:ring-[var(--color-primary)]"
               />
 
               <button
@@ -279,13 +297,15 @@ export default function Signup() {
               Confirm Password
             </label>
 
-            <div className="relative">
+            <div className="group relative">
+              <Lock size={18} strokeWidth={2} className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-[var(--color-gray-dark)] group-focus-within:text-[var(--color-primary)]"/>
+
               <input
                 id="confirm-password"
                 name="confirm-password"
-                type="password"
+                type={showConfirmPassword ? 'text' : 'password'}
                 placeholder="Confirm your password"
-                className="w-full rounded-lg bg-[var(--color-gray-light)] px-4 py-4 text-sm outline-none transition focus:ring-2 focus:ring-[var(--color-primary)]"
+                className="w-full rounded-lg bg-[var(--color-gray-light)] py-4 pl-11 pr-4 text-sm outline-none transition focus:ring-2 focus:ring-[var(--color-primary)]"
               />
 
               <button

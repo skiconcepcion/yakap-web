@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router'
-import { Eye, EyeOff } from 'lucide-react'
+import { Eye, EyeOff, UserRound, Lock } from 'lucide-react'
 
 export default function Login() {
   const [showPassword, setShowPassword] = useState(false)
@@ -35,13 +35,17 @@ export default function Login() {
             Username
           </label>
 
-          <input
-            id="username"
-            name="username"
-            type="text"
-            placeholder="Enter your username"
-            className="w-full rounded-lg bg-[var(--color-gray-light)] px-4 py-4 text-sm outline-none transition focus:ring-2 focus:ring-[var(--color-primary)]"
-          />
+          <div className="group relative">
+            <UserRound size={18} strokeWidth={2} className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-[var(--color-gray-dark)] group-focus-within:text-[var(--color-primary)]"/>
+
+            <input
+              id="username"
+              name="username"
+              type="text"
+              placeholder="Enter your username"
+              className="w-full rounded-lg bg-[var(--color-gray-light)] py-4 pl-11 pr-4 text-sm outline-none transition focus:ring-2 focus:ring-[var(--color-primary)]"
+            />
+          </div>
         </div>
 
         {/* PASSWORD */}
@@ -50,13 +54,16 @@ export default function Login() {
             Password
           </label>
 
-          <div className="relative">
+          <div className="group relative">
+            <Lock size={18} strokeWidth={2} className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-[var(--color-gray-dark)] group-focus-within:text-[var(--color-primary)]"
+            />
+
             <input
               id="password"
               name="password"
               type={showPassword ? 'text' : 'password'}
               placeholder="Enter your password"
-              className="w-full rounded-lg bg-[var(--color-gray-light)] px-4 py-4 pr-12 text-sm outline-none transition focus:ring-2 focus:ring-[var(--color-primary)]"
+              className="w-full rounded-lg bg-[var(--color-gray-light)] py-4 pl-11 pr-4 text-sm outline-none transition focus:ring-2 focus:ring-[var(--color-primary)]"
             />
 
             <button
