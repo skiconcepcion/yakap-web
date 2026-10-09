@@ -2,14 +2,14 @@ import { useState } from 'react'
 import { Link } from 'react-router'
 import { Eye, EyeOff, UserRound, Lock } from 'lucide-react'
 
-export default function Login() {
+export default function ForgotPassword() {
   const [showPassword, setShowPassword] = useState(false)
 
 
   return (
     <div>
 
-      {/* LOGIN HEADER */}
+      {/* FORGOT PASSWORD HEADER */}
       <div className="mb-12 text-center">
         <h2 className="text-3xl font-bold leading-sm tracking-tight">
           Welcome Back
@@ -26,7 +26,7 @@ export default function Login() {
       </div>
 
 
-      {/* LOGIN FORM */}
+      {/* FORGOT PASSWORD FORM */}
       <form className="space-y-6">
 
         {/* USERNAME */}
@@ -95,7 +95,7 @@ export default function Login() {
           type="submit"
           className="w-full rounded-xl bg-[var(--color-primary)] py-4 text-sm font-semibold text-white shadow-md transition hover:bg-[var(--color-secondary)] mt-1"
         >
-          Login to Account
+          ForgotPassword to Account
         </button>
       </form>
     </div>

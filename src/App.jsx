@@ -5,6 +5,7 @@ import Signup from './pages/Signup'
 import PrivacyPolicy from './pages/PrivacyPolicy'
 import AuthLayout from './layouts/AuthLayout'
 import TermsOfService from './pages/TermsOfService'
+import ForgotPassword from './pages/ForgotPassword'
 
 export default function App() {
   return (
@@ -14,8 +15,10 @@ export default function App() {
       <Route element={<AuthLayout />}>
         <Route path="/" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/forgot-password" element={<ForgotPassword />} />
       </Route>
 
+      {/* TERMS & POLICIES PAGES */}
       <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       <Route path="/terms-of-service" element={<TermsOfService />} />
 
