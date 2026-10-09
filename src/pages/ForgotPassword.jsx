@@ -11,7 +11,7 @@ export default function ForgotPassword() {
           Forgot Password?
         </h2>
 
-        <p className="text-center text-sm mt-1 text-[var(--color-gray-dark)]">
+        <p className="text-sm mt-1 text-[var(--color-gray-dark)]">
           Enter the email address associated with your account<br/>to receive temporary password.
         </p>
       </div>
@@ -23,7 +23,7 @@ export default function ForgotPassword() {
         {/* EMAIL */}
         <div>
           <label htmlFor="email" className="mb-1 block text-xs font-semibold">
-            Email Adress
+            Email Address
           </label>
 
           <div className="group relative">

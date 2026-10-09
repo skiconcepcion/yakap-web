@@ -15,7 +15,7 @@ export default function Login() {
           Welcome Back
         </h2>
 
-        <p className="text-center text-sm mt-1 text-[var(--color-gray-dark)]">
+        <p className="text-sm mt-1 text-[var(--color-gray-dark)]">
           Don't have an account?{' '}
 
           <Link to="/signup" className="group relative font-semibold text-[var(--color-primary)]">

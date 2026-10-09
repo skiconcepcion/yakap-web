@@ -67,7 +67,7 @@ export default function Signup() {
           Create Account
         </h2>
 
-        <p className="text-center text-sm mt-1 text-[var(--color-gray-dark)]">
+        <p className="text-sm mt-1 text-[var(--color-gray-dark)]">
           Already have an account?{' '}
 
           <Link to="/" className="group relative font-semibold text-[var(--color-primary)]">
