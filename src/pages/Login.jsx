@@ -42,7 +42,7 @@ export default function Login() {
               id="username"
               name="username"
               type="text"
-              placeholder="Enter your username"
+              placeholder="juandelacruz"
               className="w-full rounded-lg bg-[var(--color-gray-light)] py-4 pl-11 pr-4 text-sm outline-none transition focus:ring-2 focus:ring-[var(--color-primary)]"
             />
           </div>
@@ -62,7 +62,7 @@ export default function Login() {
               id="password"
               name="password"
               type={showPassword ? 'text' : 'password'}
-              placeholder="Enter your password"
+              placeholder="••••••••"
               className="w-full rounded-lg bg-[var(--color-gray-light)] py-4 pl-11 pr-4 text-sm outline-none transition focus:ring-2 focus:ring-[var(--color-primary)]"
             />
 

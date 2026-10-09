@@ -85,7 +85,7 @@ export default function Signup() {
         <div className="grid grid-cols-2 gap-4">
           <div>
             <label htmlFor="email" className="mb-1 block text-xs font-semibold">
-              Email
+              Email Address
             </label>
 
             <div className="group relative">
@@ -95,7 +95,7 @@ export default function Signup() {
                 id="email"
                 name="email"
                 type="email"
-                placeholder="Enter your email"
+                placeholder="juandelacruz@gmail.com"
                 className="w-full rounded-lg bg-[var(--color-gray-light)] py-4 pl-11 pr-4 text-sm outline-none transition focus:ring-2 focus:ring-[var(--color-primary)]"
               />
             </div>
@@ -113,7 +113,7 @@ export default function Signup() {
                 id="username"
                 name="username"
                 type="text"
-                placeholder="Create your username"
+                placeholder="juandelacruz"
                 className="w-full rounded-lg bg-[var(--color-gray-light)] py-4 pl-11 pr-4 text-sm outline-none transition focus:ring-2 focus:ring-[var(--color-primary)]"
               />
             </div>
@@ -133,7 +133,7 @@ export default function Signup() {
                 id="contact-number"
                 name="contact-number"
                 type="tel"
-                placeholder="Enter your contact number"
+                placeholder="09XXXXXXXXX"
                 className="w-full rounded-lg bg-[var(--color-gray-light)] py-4 pl-11 pr-4 text-sm outline-none transition focus:ring-2 focus:ring-[var(--color-primary)]"
               />
             </div>
@@ -234,7 +234,7 @@ export default function Signup() {
                 id="password"
                 name="password"
                 type={showPassword ? 'text' : 'password'}
-                placeholder="Create a password"
+                placeholder="••••••••"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 className="w-full rounded-lg bg-[var(--color-gray-light)] py-4 pl-11 pr-4 text-sm outline-none transition focus:ring-2 focus:ring-[var(--color-primary)]"
@@ -304,7 +304,7 @@ export default function Signup() {
                 id="confirm-password"
                 name="confirm-password"
                 type={showConfirmPassword ? 'text' : 'password'}
-                placeholder="Confirm your password"
+                placeholder="••••••••"
                 className="w-full rounded-lg bg-[var(--color-gray-light)] py-4 pl-11 pr-4 text-sm outline-none transition focus:ring-2 focus:ring-[var(--color-primary)]"
               />
 

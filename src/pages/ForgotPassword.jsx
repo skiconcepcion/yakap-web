@@ -24,7 +24,7 @@ export default function ForgotPassword() {
         {/* EMAIL */}
         <div>
           <label htmlFor="email" className="mb-1 block text-xs font-semibold">
-            Email
+            Email Adress
           </label>
 
           <div className="group relative">
@@ -34,7 +34,7 @@ export default function ForgotPassword() {
               id="email"
               name="email"
               type="email"
-              placeholder="Enter your email"
+              placeholder="juandelacruz@gmail.com"
               className="w-full rounded-lg bg-[var(--color-gray-light)] py-4 pl-11 pr-4 text-sm outline-none transition focus:ring-2 focus:ring-[var(--color-primary)]"
             />
           </div>
