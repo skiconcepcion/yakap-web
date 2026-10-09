@@ -11,14 +11,14 @@ const images = [
 const sections = [
   { id: 'introduction', label: 'Introduction' },
   { id: 'acceptance', label: 'Acceptance of Terms' },
-  { id: 'eligibility', label: 'Eligibility and Account Registration' },
+  { id: 'eligibility', label: 'Eligibility and Registration' },
   { id: 'use', label: 'Use of the YAKAP Portal' },
-  { id: 'orders-payments-transactions', label: 'Orders, Payments, and Transactions' },
+  { id: 'credits-and-availment', label: 'YAKAP Credits and Availment' },
   { id: 'user-responsibilities', label: 'User Responsibilities' },
   { id: 'intellectual-property', label: 'Intellectual Property' },
   { id: 'third-party', label: 'Third-Party Services' },
   { id: 'suspension', label: 'Suspension and Termination' },
-  { id: 'disclaimers', label: 'Disclaimers and Limitations of Liability' },
+  { id: 'disclaimers', label: 'Disclaimers and Limitations' },
   { id: 'changes', label: 'Changes to These Terms' },
   { id: 'governing-law', label: 'Governing Law' },
   { id: 'contact', label: 'How to Contact Us' },
@@ -133,7 +133,7 @@ export default function TermsOfService() {
                   <li>A. Acceptance of Terms</li>
                   <li>B. Eligibility and Account Registration</li>
                   <li>C. Use of the YAKAP Portal</li>
-                  <li>D. Orders, Payments, and Transactions</li>
+                  <li>D. YAKAP Credits and Availment of Healthcare Services </li>
                   <li>E. User Responsibilities</li>
                   <li>F. Intellectual Property</li>
                   <li>G. Third-Party Services</li>
@@ -147,7 +147,7 @@ export default function TermsOfService() {
             </section>
 
 
-            {/* INFORMATION WE COLLECT */}
+            {/* ACCEPTANCE OF TERMS */}
             <section id="acceptance" className="mt-12 scroll-mt-8">
               <h2 className="text-2xl font-bold">
                 A. ACCEPTANCE OF TERMS
@@ -170,7 +170,7 @@ export default function TermsOfService() {
             </section>
 
 
-            {/* INFORMATION WE COLLECT */}
+            {/* ELIGIBILITY AND ACCOUNT REGISTRATION */}
             <section id="eligibility" className="mt-12 scroll-mt-8">
               <h2 className="text-2xl font-bold">
                 B. ELIGIBILITY AND ACCOUNT REGISTRATION
@@ -202,7 +202,7 @@ export default function TermsOfService() {
             </section>
 
 
-            {/* INFORMATION WE COLLECT */}
+            {/* USE OF THE YAKAP PORTAL */}
             <section id="use" className="mt-12 scroll-mt-8">
               <h2 className="text-2xl font-bold">
                 C. USE OF THE YAKAP PORTAL
@@ -229,21 +229,24 @@ export default function TermsOfService() {
             </section>
 
 
-            {/* INFORMATION WE COLLECT */}
-            <section id="orders-payments-transactions" className="mt-12 scroll-mt-8">
+            {/* YAKAP CREDITS AND AVAILMENT OF HEALTHCARE SERVICES */}
+            <section id="credits-and-availment" className="mt-12 scroll-mt-8">
               <h2 className="text-2xl font-bold">
-                D. ORDERS, PAYMENTS, AND TRANSACTIONS
+                D. YAKAP CREDITS AND AVAILMENT OF HEALTHCARE SERVICES
               </h2>
 
               <div className="mt-4 space-y-4 leading-7">
                 <p>
-                  The YAKAP Portal may allow users to submit quotations, orders, payment information,
-                  payment documents, and other transaction-related information through the Platform.
+                  The YAKAP Portal may allow users to view available YAKAP credits or benefit information
+                  and request healthcare services through the Platform, including medicine orders, laboratory service
+                  requests, and consultation bookings. The services available through the Platform may depend on the user's
+                  eligibility, applicable program guidelines, and the services offered by participating healthcare providers.
                 </p>
 
                 <p>
-                  You are responsible for reviewing the details of your transactions before submitting them and
-                  for ensuring that all information and documents provided are accurate, complete, and authentic.
+                  Users are responsible for ensuring that the information they provide when requesting services is accurate,
+                  complete, and up to date. Users must not submit false information, make unauthorized requests,
+                  or misuse the Platform to obtain services or benefits to which they are not entitled.
                 </p>
 
                 <p>
@@ -253,16 +256,16 @@ export default function TermsOfService() {
                 </p>
 
                 <p>
-                  Any payment information or proof of payment submitted through the Platform must be truthful
-                  and must correspond to the transaction for which it is provided. We reserve the right to review,
-                  reject, suspend, or cancel transactions where information is incomplete, inaccurate,
-                  unauthorized, or reasonably suspected to be fraudulent.
+                  YAKAP credits and benefit information displayed on the Platform are provided to help users understand
+                  and manage their available benefits. The use of such credits or benefits remains subject to applicable
+                  PhilHealth YAKAP program guidelines and the policies of participating healthcare providers. Users should
+                  not assume that displayed credit information guarantees the availability or approval of a particular service.
                 </p>
               </div>
             </section>
 
 
-            {/* INFORMATION WE COLLECT */}
+            {/* USER RESPONSIBILITIES */}
             <section id="user-responsibilities" className="mt-12 scroll-mt-8">
               <h2 className="text-2xl font-bold">
                 E. USER RESPONSIBILITIES
@@ -286,7 +289,7 @@ export default function TermsOfService() {
             </section>
 
 
-            {/* INFORMATION WE COLLECT */}
+            {/* INTELLECTUAL PROPERTY */}
             <section id="intellectual-property" className="mt-12 scroll-mt-8">
               <h2 className="text-2xl font-bold">
                 F. INTELLECTUAL PROPERTY
@@ -313,7 +316,7 @@ export default function TermsOfService() {
             </section>
 
 
-            {/* INFORMATION WE COLLECT */}
+            {/* THIRD-PARTY SERVICES */}
             <section id="third-party" className="mt-12 scroll-mt-8">
               <h2 className="text-2xl font-bold">
                 G. THIRD-PARTY SERVICES
@@ -339,7 +342,7 @@ export default function TermsOfService() {
             </section>
 
 
-            {/* INFORMATION WE COLLECT */}
+            {/* SUSPENSION AND TERMINATION */}
             <section id="suspension" className="mt-12 scroll-mt-8">
               <h2 className="text-2xl font-bold">
                 H. SUSPENSION AND TERMINATION
@@ -371,7 +374,7 @@ export default function TermsOfService() {
             </section>
 
 
-            {/* INFORMATION WE COLLECT */}
+            {/* DISCLAIMERS AND LIMITATIONS OF LIABILITY */}
             <section id="disclaimers" className="mt-12 scroll-mt-8">
               <h2 className="text-2xl font-bold">
                 I. DISCLAIMERS AND LIMITATIONS OF LIABILITY
@@ -404,7 +407,7 @@ export default function TermsOfService() {
             </section>
 
 
-            {/* INFORMATION WE COLLECT */}
+            {/* CHANGES TO THESE TERMS */}
             <section id="changes" className="mt-12 scroll-mt-8">
               <h2 className="text-2xl font-bold">
                 J. CHANGES TO THESE TERMS
@@ -430,7 +433,7 @@ export default function TermsOfService() {
             </section>
 
 
-            {/* INFORMATION WE COLLECT */}
+            {/* GOVERNING LAW */}
             <section id="governing-law" className="mt-12 scroll-mt-8">
               <h2 className="text-2xl font-bold">
                 K. GOVERNING LAW
@@ -451,10 +454,10 @@ export default function TermsOfService() {
             </section>
 
 
-            {/* INFORMATION WE COLLECT */}
+            {/* HOW TO CONTACT US */}
             <section id="contact" className="mt-12 scroll-mt-8">
               <h2 className="text-2xl font-bold">
-                L, HOW TO CONTACT US
+                L. HOW TO CONTACT US
               </h2>
 
               <div className="mt-4 space-y-4 leading-7">

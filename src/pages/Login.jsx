@@ -55,8 +55,7 @@ export default function Login() {
           </label>
 
           <div className="group relative">
-            <Lock size={18} strokeWidth={2} className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-[var(--color-gray-dark)] group-focus-within:text-[var(--color-primary)]"
-            />
+            <Lock size={18} strokeWidth={2} className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-[var(--color-gray-dark)] group-focus-within:text-[var(--color-primary)]"/>
 
             <input
               id="password"
