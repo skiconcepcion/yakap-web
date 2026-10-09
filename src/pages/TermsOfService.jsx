@@ -3,7 +3,8 @@ import { Link } from 'react-router'
 import { MoveLeft, ChevronRight } from 'lucide-react'
 
 const images = [
-  '/login-4.jpeg',
+  '/login-4.png',
+  '/login-5.png',
   '/login-1.png',
   '/login-2.png',
 ]

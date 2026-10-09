@@ -6,7 +6,8 @@ const images = [
   '/login-1.png',
   '/login-2.png',
   '/login-3.png',
-  '/login-4.jpeg',
+  '/login-4.png',
+  '/login-5.png',
 ]
 
 export default function AuthLayout() {
