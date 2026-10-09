@@ -480,12 +480,14 @@ export default function TermsOfService() {
 
         {/* FOOTER */}
         <div className="py-8 text-center">
-          <p className="text-sm text-[var(--color-gray-dark)]">
-            <Link to="/" className="group relative font-semibold text-[var(--color-primary)]">
-              Go Back to Login Page
-              <span className="absolute -bottom-0.5 left-0 h-[2px] w-full origin-left scale-x-0 rounded-full bg-[var(--color-primary)] transition-transform duration-200 ease-out group-hover:scale-x-100"/>
-            </Link>
-          </p>
+          <Link to="/" className="group inline-flex items-center justify-center gap-2 text-sm font-semibold text-[var(--color-primary)]">
+            <MoveLeft size={18} strokeWidth={3} className="shrink-0 transition-transform duration-200 group-hover:-translate-x-1"/>
+
+            <span className="relative">
+              Back to Login Page
+              <span className="absolute -bottom-0.5 left-0 h-[2px] w-full origin-left scale-x-0 rounded-full bg-[var(--color-primary)] transition-transform duration-200 ease-out group-hover:scale-x-100" />
+            </span>
+          </Link>
         </div>
 
       </div>
